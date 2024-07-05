@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Sedan+SC&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0;
+}
+
+
+.header{
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    background-color: white !important;
+    z-index: 1;
+}
+
+main{
+    margin-top: 100px;
+}
+
+.navItems{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 75%;
+    margin-left: 15%;
+    /* gap: 2%; */
+    /* margin: 0 15% 0 5%; */
+    
+}
+
+.items{
+    font-size: 17px;
+    color: rgb(145, 141, 141);
+    padding: 7px;
+    border-radius: 5px;
+    
+    font-family: "Libre Franklin", sans-serif;
+    
+}
+
+.items a{
+    text-decoration: none;
+    font-size: 17px;
+    color: rgb(145, 141, 141);
+    padding: 7px;
+    border-radius: 5px;
+    
+    font-family: "Libre Franklin", sans-serif;
+}
+
+.items:hover{
+    color: white;
+    background-color: rgb(216, 184, 165)
+}
+
+a:hover{
+    color: white;
+}
+
+nav{
+    margin: 0 2% 0 1%;
+    height: 4em;
+    display: flex;
+    color: brown;
+    height: 4em;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    width: 25%;
+    font-family: "Sedan SC", serif;
+    
+}
+
+.line{
+    height: 1px;
+    border: 0;
+    background-color: rgb(220, 211, 211);
+}
+
+.heading{
+    width: 100%;
+    text-align: center;
+    font-family: "Sedan SC", serif;
+    color: rgb(140, 13, 13);
+    font-size: px;
+}
+
+.img{
+    position: relative;
+    left: 25%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.img h3{
+    width: 100%;
+    text-align: center;
+    color: rgba(134, 123, 135, 0.998);
+    position: relative;
+    left: 10px;
+    font-family:sans-serif;
+}
+
+.img img{
+    position: relative;
+    vertical-align: middle;
+    width: 100%;
+    box-shadow: 2px 0px 5px 0px rgb(191, 186, 176);
+    padding: 5px;
+}
+
+
+.fade{
+    
+    animation-name: fade;
+    animation-duration: 2.7s;
+}
+
+@keyframes fade {
+    from {opacity: .7} 
+    to {opacity: 1}
+}
+
+.tagline{
+    height: 4em;
+    color: rgb(140, 13, 13);
+    font-family: "Libre Franklin", sans-serif;
+    text-align: center;
+    text-shadow: 5px 2px rgb(216, 223, 216);
+}
+
+.tagline2{
+    color: rgb(140, 13, 13);
+    font-family: "Sedan SC", serif;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+/* BRANCHES */
+.branches{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-right: 15%;
+    margin-left: 15%;
+    
+}
+.branches .sec1{
+    height: 250px;
+    width: 250px;
+    margin: 0px 10px 20px 20px;
+    
+    overflow: hidden;
+}
+
+.branches .sec1 img{
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    
+}
+
+.branches .sec2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    height: 150px;
+    width: 70%;
+
+    font-size: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.sub{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+    color: brown;
+}
+
+
+
+.branch{
+    display: flex;
+    flex-direction: row;
+}
+
+
+/* BOXES */
+
+.services{
+    display: flex;
+    gap: 1em;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0px 5% 0% 5%;
+
+}
+
+.boxes{
+    overflow: hidden;
+    height: 350px;
+    width: 400px;
+    text-align: center;
+    font-family: "Libre Franklin", sans-serif ;
+    color: grey;
+    
+}
+
+.boxes img{
+    height: 300px;
+    
+}
+
+
+/* ROOMS */
+
+.lane{
+    margin: 5% ;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5%;
+}
+
+.lane .room{
+    height: 350px;
+    width: 450px;
+    background-color: antiquewhite;
+    overflow: hidden;
+}
+
+.text{
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    color: brown;
+}
+
+.lane img{
+    height: 350px;
+}
+
+/* FOOTER */
+footer{
+    height: 250px;
+    background-color: rgb(255, 115, 33);
+    color: rgb(210, 188, 175);
+    width: 100%;
+}
+h1{
+    margin-left: 70px;
+}
+
+footer h1{
+    color: rgb(255, 243, 221);
+   margin: 10px 0px 20px 0px;
+    width: 250px;
+
+}
+
+.details{
+    display: flex;
+    flex-direction: column;
+    margin: 0px 5% 5% 5%;
+    justify-content: center;
+    align-items: center;
+}
+
+footer ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+}
+
+footer ul p{
+    color:  rgb(255, 243, 221);
+}
+
+.details .text{
+    color: rgb(211, 174, 122);
+}
